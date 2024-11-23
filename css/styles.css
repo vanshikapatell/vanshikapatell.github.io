@@ -1,39 +1,132 @@
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #f4f4f9; /* Light gray background for contrast */
+  color: #333; /* Dark text for readability */
 }
 
-nav ul {
-  list-style: none;
-  background: #333;
-  padding: 10px;
+header {
+  background: linear-gradient(90deg, #6a11cb, #2575fc); /* Gradient background */
+  color: #fff;
+  padding: 1.5em 0;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-nav ul li {
-  display: inline;
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
   margin: 0 15px;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s;
 }
 
-nav ul li a {
-  color: white;
+nav a:hover {
+  color: #ffe4b5; /* Light goldenrod hover color */
+}
+
+main {
+  padding: 40px 15%;
+}
+
+/* Section Titles */
+h2 {
+  color: #2575fc; /* Vibrant blue for headings */
+  border-bottom: 2px solid #6a11cb;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* Lists Styling */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #2575fc;
   text-decoration: none;
 }
 
-h1, h2 {
-  text-align: center;
-  margin-top: 20px;
+footer a:hover {
+  text-decoration: underline;
 }
 
-section {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  background: white;
+/* Buttons (Optional for Projects or Links) */
+button {
+  background: #2575fc;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1em;
+  font-weight: bold;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #6a11cb;
+}
+
+/* Cards for Project Pages (Optional) */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    padding: 20px 5%;
+  }
+
+  nav a {
+    font-size: 1em;
+    margin: 0 10px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
 }
