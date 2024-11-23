@@ -117,6 +117,7 @@ button:hover {
 
 img{
   align-items: center;
+  justify-content: center;
 }
 
 /* Responsive Design */
