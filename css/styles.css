@@ -129,4 +129,10 @@ button:hover {
   header h1 {
     font-size: 2em;
   }
+
+  img {
+    justify-content: center
+  }
 }
+
+  
