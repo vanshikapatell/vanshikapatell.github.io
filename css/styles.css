@@ -115,6 +115,10 @@ button:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
+img{
+  align-items: center;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   main {
@@ -128,10 +132,6 @@ button:hover {
 
   header h1 {
     font-size: 2em;
-  }
-
-  img {
-    justify-content: center
   }
 }
 
